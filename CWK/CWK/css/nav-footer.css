@@ -1,0 +1,149 @@
+
+*{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    overflow-x: hidden; 
+}
+
+body{
+    width: 100%;
+}
+
+.nav{
+    justify-content: space-between;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right:0;
+    left:0;
+    background: #009E3C;
+    padding: 10px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+}
+
+
+header .navbar ul{
+    list-style:none;  
+}
+
+header .navbar ul li{
+    position: relative;
+    float:left;
+    
+}
+
+header .navbar ul li a{
+    font-size: 18px;
+    padding: 2px;
+    color: rgb(255, 255, 255);
+    display:block;
+    font-weight: 500;
+    
+}
+header .navbar ul li a:hover{
+    border-radius: 0px ;
+    font-size: 18px;
+    color: #009E3C;
+    background-color: #fff ;
+}
+
+
+header .navbar ul li ul li a:hover{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background: rgb(119, 195, 109);
+    border-radius: 0%;
+}
+
+header .navbar ul li:hover > ul{
+    display:initial;
+}
+.nav-links .active {
+    background-color: #fff;
+    color: #009E3C;
+    font-weight: bold;
+}
+.nav-icon{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+    color: #fff;
+}
+.icon{
+    color: #fff;
+}
+.icon:hover{
+    transition: grow ;
+}
+
+.icon{
+    margin: 0 20px;
+}
+
+/* Header Section End */
+  
+/* Footer section starts */
+
+/* Footer section */
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    border: none;
+    text-align: center; /* Center the content */
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.footer .container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center the container */
+}
+
+.footer-col {
+    width: 100%;
+    padding: 0 15px;
+    display: inline-block; /* Change to inline-block to align side by side */
+    vertical-align: top; /* Align to top of container */
+    text-align: left; /* Align content to left */
+}
+
+.footer-col h4 {
+    margin-bottom: 15px; /* Reduce margin bottom */
+}
+
+.footer-col ul li a {
+    margin-bottom: 10px; /* Reduce margin bottom */
+}
+
+
+/* loader */
+.loader {
+    border: 16px solid #000000;
+    border-top: 16px solid #009E3C ;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+  
